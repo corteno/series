@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    font-family: RalewayRegular;
+
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+
+    background: url("img/westworldmarsdenwood.jpg") no-repeat top center;
+    background-size: cover;
+}
+
+.header-gradient{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(44,44,44,0);
+    background: -moz-linear-gradient(top, rgba(44,44,44,0) 58%, rgba(44,44,44,0.19) 67%, rgba(43,43,43,0.42) 78%, rgba(28,28,28,0.67) 90%, rgba(0,0,0,0.88) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(58%, rgba(44,44,44,0)), color-stop(67%, rgba(44,44,44,0.19)), color-stop(78%, rgba(43,43,43,0.42)), color-stop(90%, rgba(28,28,28,0.67)), color-stop(100%, rgba(0,0,0,0.88)));
+    background: -webkit-linear-gradient(top, rgba(44,44,44,0) 58%, rgba(44,44,44,0.19) 67%, rgba(43,43,43,0.42) 78%, rgba(28,28,28,0.67) 90%, rgba(0,0,0,0.88) 100%);
+    background: -o-linear-gradient(top, rgba(44,44,44,0) 58%, rgba(44,44,44,0.19) 67%, rgba(43,43,43,0.42) 78%, rgba(28,28,28,0.67) 90%, rgba(0,0,0,0.88) 100%);
+    background: -ms-linear-gradient(top, rgba(44,44,44,0) 58%, rgba(44,44,44,0.19) 67%, rgba(43,43,43,0.42) 78%, rgba(28,28,28,0.67) 90%, rgba(0,0,0,0.88) 100%);
+    background: linear-gradient(to bottom, rgba(44,44,44,0) 58%, rgba(44,44,44,0.19) 67%, rgba(43,43,43,0.42) 78%, rgba(28,28,28,0.67) 90%, rgba(0,0,0,0.88) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c2c2c', endColorstr='#000000', GradientType=0 );
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    color: #fff;
+    padding: 20px 100px 0;
+
+    z-index: 100;
+    font-size: 24px;
+
+}
+
+.header-flex-row{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.header-title{
+    margin-right: auto;
+    text-transform: uppercase;
+}
+
+.search-icon{
+    height: 20px;
+    width: 20px;
+    margin-top: 8px;
+    margin-right: 30px;
+}
+
+
+.sign-up{
+    background: #4FC3F7;
+    font-size: 18px;
+    padding: 7px 25px;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.sign-in{
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.header-series-details-wrapper{
+    display: flex;
+    margin-top: auto;
+}
+
+.header-series-title{
+    font-family: RalewayBold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+
+
+
+.bold{
+    font-family: OpenSansBold;
+}
+
+.thin{
+    font-family: OpenSansLight;
+}
+
+
+
+
+
+
+/*
+    FONTS
+*/
+@font-face {
+    font-family: OpenSansRegular;
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSansLight;
+    src: url("fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url("fonts/OpenSans-Bold.ttf");
+}
+
+
+@font-face {
+    font-family: RalewayRegular;
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: RalewayLight;
+    src: url("fonts/Raleway-Light.ttf");
+}
+
+@font-face {
+    font-family: RalewayBold;
+    src: url("fonts/Raleway-Bold.ttf");
+}
