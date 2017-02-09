@@ -94,6 +94,7 @@ button:focus{
 .sign-in{
     font-size: 18px;
     margin-right: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .header-series-details-wrapper{
@@ -182,7 +183,8 @@ button:focus{
 .series-card-wrapper{
     display: flex;
     flex-direction: column;
-    min-width: 350px;
+    min-width: 325px;
+    max-width: 375px;
     width: 22%;
     margin: 20px 0;
     height: 420px;
@@ -349,6 +351,71 @@ button:focus{
 
 .thin{
     font-family: RalewayLight;
+}
+
+.hamburger {
+    position: relative;
+    z-index: 200;
+    display: none;
+    float: right;
+    width: 22px;
+    height: 19px;
+    /* margin-right: 22px; */
+    margin-top: 6px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transition: 0.2s;
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 100%;
+    border-top: 3px solid #fff;
+}
+
+
+
+
+@media screen and (max-width: 976px) {
+    .header-content, .main-content-wrapper{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header-view-info{
+
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .header-view-info, .header-watch-now{
+        display: none;
+    }
+
+    .series-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header-search, .header-sign{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .favourite-button, .header-rating{
+        display: none;
+    }
 }
 
 
