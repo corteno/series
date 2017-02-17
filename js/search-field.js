@@ -16,9 +16,11 @@ label.addEventListener("click", () => {
 searchField.addEventListener("blur", () => {
     if(hasClass(searchField, "search-field-open")){
         searchField.className = "search-field";
+
     }
 
 });
+
 
 function hasClass(element, cls) {
     return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;

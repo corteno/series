@@ -219,6 +219,7 @@ button:focus{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .series-card-wrapper{
@@ -369,9 +370,26 @@ button:focus{
 
 .footer{
     display: flex;
-    height: 70px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ababab;
+
+    height: 90px;
     background: #fff;
     box-shadow: 0 4px 11px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-text{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+#footer-year{
+    margin-top: 2px;
+    color: #c6c6c6;
 }
 
 
