@@ -210,6 +210,8 @@ button:focus{
 */
 
 .main-content-wrapper{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 0 100px;
 }
@@ -366,6 +368,23 @@ button:focus{
     background-size: cover;
 }
 
+.more-series-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.more-menu-wrapper{
+    display: none;
+    position: absolute;
+    height: 200px;
+    width: 50px;
+
+    background: #eee;
+
+    top: -220px;
+    left: -50px;
+}
+
 
 
 .footer{
@@ -393,6 +412,7 @@ button:focus{
 }
 
 
+
 /*
     GENERAL STUFF
 */
@@ -408,6 +428,16 @@ button:focus{
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
+
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s ;
+    -ms-transition: 0.2s ;
+    -o-transition: 0.2s ;
+    transition: 0.2s ;
+}
+
+.blue-button:hover{
+    background: #0390d7;
 }
 
 .white-button{
@@ -423,6 +453,7 @@ button:focus{
 }
 
 .more-button{
+    position: relative;
     height: 20px;
     width: 20px;
     background: transparent;
@@ -430,6 +461,11 @@ button:focus{
     padding: 0;
     margin-left: 15px;
     align-self: center;
+}
+
+.more-series-button{
+    justify-self: center;
+    margin-bottom: 20px;
 }
 
 .svg-icon{
